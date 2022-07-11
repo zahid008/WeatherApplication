@@ -12,7 +12,7 @@
 
 ### Version 1.0.1: 
 This time Django is used to build the application. Besides, the interface is built using boothstrap. Now, user gets an interative web application. 
-
+![image](https://github.com/zahid008/WeatherApplication/blob/main/version_1.0.1/WeatherApplicationDjango/static/images/wa_v1.0.1_snap.PNG)
 
 
 
