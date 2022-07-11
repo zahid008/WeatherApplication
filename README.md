@@ -10,6 +10,13 @@
 
 >I am using  conda to install all these packages. 
 
+### Version 1.0.1: 
+This time Django is used to build the application. Besides, the interface is built using boothstrap. Now, user gets an interative web application. 
+
+
+
+
+
 ### Version 1.0.0: 
 This is just a basic version where the user interacts with the application using the terminal. 
 
