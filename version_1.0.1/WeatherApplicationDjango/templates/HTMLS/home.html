@@ -1,0 +1,48 @@
+{% extends 'HTMLS/base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App </title>
+</head>
+<body background={% static 'images/bg.jpg' %}>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" >
+    <form method="post" class="col-md">
+      {% csrf_token %}
+      <div class=" input-group" >
+
+      <input type="text" class="form-control" name="city" placeholder="Write Your City ..." style="background: transparent">
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-outline-light" style="color: whitesmoke">Search</button>
+      </div>
+      </div>
+    </form>
+  </nav>
+
+  <br> <br>
+
+  <div class="row">
+    {% if country_code and coordinate and temp and pressure and humidity %}
+    <div class="col d-flex justify-content-center", style = "opacity: .75">
+      <div class=" card text-white bg-dark mb-5">
+      <div class=" card-body">
+        <h4><span class="badge badge-primary">Location :</span> {{location}}</h4>
+        <h4><span class="badge badge-primary">Today is :</span> {{date}}</h4>
+        <h4><span class="badge badge-primary">Time:</span> {{current_time}}</h4>
+        <h4><span class="badge badge-primary">Country Code :</span> {{country_code}}</h4>
+        <h4><span class="badge badge-primary">Coordinates :</span> {{coordinate}}</h4>
+        <h4><span class="badge badge-primary">Temperature :</span> {{temp}}</h4>
+        <h4><span class="badge badge-primary">Pressure :</span> {{pressure}} </h4>
+        <h4><span class="badge badge-primary">Humidity : </span> {{humidity}}</h4>
+        <h4><span class="badge badge-primary">Wind : </span> {{wind}}</h4>
+        <h4><span class="badge badge-primary">Forecast : </span> {{main}} <img
+            src="http://openweathermap.org/img/w/{{icon}}.png" alt="Image" style="width:70px"></h4>
+      </div>
+      {% endif %}
+    </div>
+</body>
+</html>
+{% endblock content %}
