@@ -7,7 +7,7 @@
 | [geopy](https://anaconda.org/conda-forge/geopy)   |     
 | [pytz](https://anaconda.org/conda-forge/pytz)   |
 |[requests](https://anaconda.org/anaconda/requests)|
-|[API ]([https://openweathermap.org/api])|
+|[API ](https://openweathermap.org/api)|
 >I am using  conda to install all these packages. 
 
 ### Version 1.0.1: 
