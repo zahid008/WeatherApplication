@@ -34,3 +34,5 @@ weather:  Haze
 <br>Wind:  6.17</br>
 Humidity:  62
 
+
+Future Work: Predict weather of a certain city based on data collected trough the API call. 
